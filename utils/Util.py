@@ -6,6 +6,10 @@ class TimeFrame(Enum):
     H4 = 1
     M15 = 2
 
+class KeyLevel(Enum):
+    SUPPORT = 1
+    RESISTANT = 2
+
 # swing structure direct Bullish to Bearish
 def implement_market_structure_states_direct(df, n=5):
     """Calcule les états du marché avec transition obligatoire par l'état NEUTRAL.
